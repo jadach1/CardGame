@@ -1,0 +1,17 @@
+.player1{
+    color: red;
+    position: relative;
+    top: 0px;
+}
+
+.player2{
+    color: blue;
+    position: relative;
+    bottom: 0px;
+    left:   50%;
+}
+
+.score{
+    position: relative;
+    top: 0px;
+}

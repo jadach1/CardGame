@@ -1,0 +1,35 @@
+<div class="container">
+    <button (click)="resetGame()">Restart</button>
+    <table>
+        <tr>
+            <th style="color: red;"><h1>Player 1</h1></th>
+            <th>Cards Remaining</th>
+            <th style="color: blue"><h1>Player 2</h1></th>
+        </tr>
+        <tr>
+            <th>Points</th>
+            <th></th>
+            <th>Points</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>{{playerOne.points}}</td>
+            <td>{{playerOne.deck.cardsRemaining}}</td> 
+            <td>{{playerTwo.points}}</td>
+        </tr>
+        <tr>
+            <th>Current Hand</th>
+            <th>Greater Hand</th>
+            <th>Current Hand</th>
+        </tr>
+        <tr style="text-align: center;" >
+            <td>{{currentCardL}}</td>
+            <td>{{winningHand}}</td>
+            <td>{{currentCardR}}</td>
+        </tr>
+    </table>
+
+    <button (click)="cardDuelStart()">Next Hand</button>
+    <div>
+        <h1 style="color: gold;">{{endOfGame}}</h1>
+    </div>
+</div>
